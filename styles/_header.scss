@@ -1,0 +1,94 @@
+@import "./variables";
+@import "./global";
+
+
+header{
+   
+    
+
+    #s{opacity: 0;}
+background: transparent;/* arkaplan rengiyle uyumlu olsun */
+position: fixed;/* kendi içeriğin kadar alan kapla çünkü inline eleman */
+top:0;
+width: 100%;
+z-index: 10000000; /* içerik daima ön planda kalsın :) */
+padding: 27px 17px;
+@extend .flex; /* @extend (MİRAS ALMA) İLE KODLAR başla SCSS sayfasından önce @İMPROT edilir sonra @EXTEND (class/kod) ile MİRAS ALINIR. */
+justify-content: space-between;
+@extend .transition;
+/* slow motion yavaş geçiş :)  */
+
+/* Logo Kısmı: */
+.logo{
+    &:hover{ //ufak bir dokunuş :) 
+      @extend .transition;
+        display: flex;
+        transform: translateY(-7px);
+        #ed{
+            color: red;
+        }
+        #s{
+            opacity: 1;
+            color: blue;
+        }
+    }
+
+    font-size: 33px;
+    color: $text-color;
+    font-weight: 700;
+    span{
+        transform: translateY(-3px);
+        color: $main-color;/* Udemig kelimesini span içine yazarak rengini değiştirdik.  */
+    }
+}
+/* Navbar Kısmı: */
+.navbar{
+    transform: translateY(-3px);
+    @extend .flex;
+    a{
+        color: $text-color;
+        font-size: $p-font;
+        font-weight: 500;
+        margin: 15px 22px;
+       @extend .transition;  // transition: all 0.5s ease;
+        &:hover{
+            color: $main-color;
+            cursor: pointer;
+        }
+    }
+}
+.header-right{
+    @extend .flex;
+    a{
+font-size: 20px;
+  color: $text-color;
+  margin-right: 18px;
+  margin-left: 5px;
+  &:hover{
+color: $main-color;
+transform: translateY(-3px);
+/* yukarıya doğru zıplama */
+  
+}
+    }
+a:first-child{
+    font-size:$p-font;
+    margin-right: 20px;
+}
+}
+}
+
+
+//Responsive Design
+@media (max-width:1230px) {
+    .navbar li{
+        display: none;
+    //opacity: 0; alternatif bir çözüm
+    }
+
+}
+@media (max-width:700px) {
+     .header-right a{
+        display: none;
+    }
+} 

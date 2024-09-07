@@ -1,0 +1,31 @@
+.flex{
+display: flex;
+align-items: center;
+/* elemanlar yatay bir şekilde hizalansın ve ortalansın :) */
+}
+
+.transition{
+    transition: all 0.5s ease;
+}
+
+.box{
+    position: absolute;
+    left: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    i{
+        color: $main-color;
+        margin-right: 10px;}
+}
+.hoverred{
+    &:hover{color:red;
+        transform: translateY(-10px);}
+}
+.hoverblue{
+    &:hover{color:blue;
+        transform: translateY(-10px);}
+}
+.hoverblueviolet{
+    &:hover{color:blueviolet;
+        transform: translateY(-10px);}
+}
