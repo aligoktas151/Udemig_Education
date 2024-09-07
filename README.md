@@ -8,10 +8,10 @@ These are Frontend, Backend React Native and English Courses. :)
 
 <h2>Technologies Used in the Project:</h2>
 
-Made with HTML, CSS, HTML5 CSS3 and SASS&SCSS.
+Made with <b> HTML, CSS, HTML5 CSS3 and  SASS&SCSS. </b>
 
 <h2>Screen gif:</h2>
 
 ![](screennew.gif) 
 
-# Udemig_Education
+
