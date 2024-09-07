@@ -2,7 +2,7 @@
 
 The purpose of this Udemig_Education project is to prepare the courses 
 
-required to become a sought-after Full Stack Developer in the industry. 
+required <b> to become a sought-after Full Stack Developer in the industry. </b>
 
 These are Frontend, Backend React Native and English Courses. :)
 
